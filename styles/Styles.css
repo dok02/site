@@ -1,0 +1,366 @@
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+.nav-bg {
+  background: #191a1d;
+}
+
+.wrapper {
+  background: rgb(16, 19, 21);
+  min-height: 100vh;
+}
+
+.fullscreen {
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+}
+.left-block {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 20vh;
+  background-color: #24262b;
+}
+
+.container {
+  min-height: 100%;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  padding-top: 30px;
+  position: relative;
+}
+
+.container img {
+  width: 100%;
+}
+
+.container a {
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  font-size: 0;
+  border-radius: 10px;
+  width: 5%;
+  display: none;
+}
+
+.container a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup_body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup_content {
+  min-height: 100%;
+
+  background-color: rgb(175, 175, 175);
+  color: black;
+  width: 80%;
+  padding: 30px;
+  position: relative;
+}
+
+.popup_close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 20px;
+  text-decoration: none;
+  color: brown;
+  display: block;
+}
+
+.card-block {
+  min-height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+}
+
+.card-content {
+  min-height: 100%;
+  background: wheat;
+  border: none;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  width: 100%;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.card-content:hover {
+  transform: translateY(5px);
+  box-shadow: 2px 2px 26px 0px rgba(0, 0, 0, 0.3);
+}
+
+.card-block img {
+  margin-top: 20px;
+  width: 100%;
+  /*border-top-left-radius: 20px;
+  border-top-right-radius: 20px;*/
+}
+
+.card-text {
+  padding: 0 20px 20px;
+}
+.card-text button {
+  background: rgb(149, 144, 144);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .card-block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .card-block {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.type-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: 0.5px solid aliceblue;
+  margin-top: 30%;
+}
+.type-buttons > span {
+  padding: 5%;
+  border-bottom: 0.5px solid aliceblue;
+  color: aliceblue;
+  text-align: center;
+  font-size: 18px;
+}
+.type-buttons a {
+}
+.button {
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.button:hover {
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.button:hover .btn-line-top {
+  left: 100%;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+.btn-line {
+  position: absolute;
+  display: block;
+}
+
+.btn-line-top {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 1px;
+}
+
+.button:hover .btn-line-top {
+  left: 100%;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+
+.btn-line-bottom {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 1px;
+}
+
+.button:hover .btn-line-bottom {
+  right: 100%;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+
+.btn-line-left {
+  bottom: -100%;
+  left: 0;
+  width: 1px;
+  height: 100%;
+}
+
+.button:hover .btn-line-left {
+  bottom: 100%;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.btn-line-right {
+  top: -100%;
+  right: 0;
+  width: 1px;
+  height: 100%;
+}
+
+.button:hover .btn-line-right {
+  top: 100%;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.button button {
+  width: 100%;
+  padding: 5% 3%;
+  border: none;
+  background-color: transparent;
+  color: aliceblue;
+}
+
+.type-buttons .btn-smoke:hover {
+  box-shadow: 0 0 10px grey, 0 0 40px grey;
+  background-color: grey;
+}
+
+.btn-line-top-smoke {
+  background: linear-gradient(270deg, transparent, grey);
+}
+.btn-line-right-smoke {
+  background: linear-gradient(180deg, transparent, grey);
+}
+
+.btn-line-bottom-smoke {
+  background: linear-gradient(90deg, transparent, grey);
+}
+
+.button .btn-line-left-smoke {
+  background: linear-gradient(0deg, transparent, grey);
+}
+
+.type-buttons .btn-molotov:hover {
+  box-shadow: 0 0 10px rgb(255, 136, 0), 0 0 40px rgb(255, 26, 26);
+  background-color: rgb(255, 136, 0);
+}
+
+.btn-line-top-molotov {
+  background: linear-gradient(270deg, transparent, rgb(255, 26, 26));
+}
+.btn-line-right-molotov {
+  background: linear-gradient(180deg, transparent, rgb(255, 26, 26));
+}
+
+.btn-line-bottom-molotov {
+  background: linear-gradient(90deg, transparent, rgb(255, 26, 26));
+}
+
+.button .btn-line-left-molotov {
+  background: linear-gradient(0deg, transparent, rgb(255, 26, 26));
+}
+
+.type-buttons .btn-flash:hover {
+  box-shadow: 0 0 10px rgb(211, 211, 80), 0 0 40px rgb(211, 211, 80);
+  background-color: rgb(211, 211, 80);
+}
+
+.btn-line-top-flash {
+  background: linear-gradient(270deg, transparent, rgb(255, 255, 0));
+}
+.btn-line-right-flash {
+  background: linear-gradient(180deg, transparent, rgb(255, 255, 0));
+}
+
+.btn-line-bottom-flash {
+  background: linear-gradient(90deg, transparent, rgb(255, 255, 0));
+}
+
+.button .btn-line-left-flash {
+  background: linear-gradient(0deg, transparent, rgb(255, 255, 0));
+}
+
+.map-title {
+  border: 2px solid #ffffff;
+  color: rgb(236, 230, 219);
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+}
+.map-title h4 {
+  padding: 3%;
+  flex: 1;
+  text-align: center;
+}
+.map-title img {
+  height: 100%;
+  padding-right: 10%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 50%;
+  border: 1px solid #ffffff;
+  color: rgb(236, 230, 219);
+}
+
+.contact span {
+  padding: 10%;
+  border-bottom: 0.5px solid aliceblue;
+  color: rgb(206, 206, 206);
+  text-align: center;
+  font-size: 14px;
+}
+
+.contact button {
+  padding: 7%;
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: rgb(255, 254, 254);
+  text-align: center;
+  font-size: 14px;
+}
+
+.contact button:hover {
+  background: beige;
+  box-shadow: 0 0 10px rgb(190, 190, 190), 0 0 40px rgb(211, 211, 80);
+  color: black;
+}

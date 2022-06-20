@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/Styles.css" />
+    <link rel="stylesheet" href="../styles/dust2.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dust2</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-expand-lg navbar-dark nav-bg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">CS:GO Grenades</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item dropdown active">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Maps
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Dust2</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/maps/nuke.html">Nuke</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="fullscreen">
+        <div class="left-block">
+          <div class="map-title">
+              <h4>Dust2</h4>
+              <img src="/res/icons/dust2.png" alt="" srcset="">
+          </div>
+
+          <div class="type-buttons">
+            <span>Виберіть тип гранати:</span>
+            <a class="button btn-smoke">
+              <span class="btn-line btn-line-top btn-line-top-smoke"></span>
+              <span class="btn-line btn-line-right btn-line-right-smoke"></span>
+              <span
+                class="btn-line btn-line-bottom btn-line-bottom-smoke"
+              ></span>
+              <span class="btn-line btn-line-left btn-line-bottom-smoke"></span>
+              <button id="btn_smoke">Smoke</button>
+            </a>
+
+            <a class="button btn-molotov">
+              <span class="btn-line btn-line-top btn-line-top-molotov"></span>
+              <span
+                class="btn-line btn-line-right btn-line-right-molotov"
+              ></span>
+              <span
+                class="btn-line btn-line-bottom btn-line-bottom-molotov"
+              ></span>
+              <span class="btn-line btn-line-left btn-line-left-molotov"></span>
+              <button id="btn_molotov">Molotov</button>
+            </a>
+            <a class="button btn-flash">
+              <span class="btn-line btn-line-top btn-line-top-flash"></span>
+              <span class="btn-line btn-line-right btn-line-right-flash"></span>
+              <span
+                class="btn-line btn-line-bottom btn-line-bottom-flash"
+              ></span>
+              <span class="btn-line btn-line-left"></span>
+              <button id="btn_flash">Flash</button>
+            </a>
+          </div>
+          <div class="contact">
+            <span>Знайшли помилку або є ідеї напишіть мені</span>
+            <a href="/form.html" target="_blank"><button>Написати</button></a>
+          </div>
+        </div>
+        <div class="container">
+          <img src="../res/pictures/dust2.png" alt="" />
+          <a
+            id="smoke-1"
+            style="top: 64.5%; left: 69%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-2"
+            style="top: 55%; left: 69%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-3"
+            style="top: 49%; left: 72%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-4"
+            style="top: 52%; left: 72%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-5"
+            style="top: 46%; left: 82%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-6"
+            style="top: 53%; left: 81%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-7"
+            style="top: 47%; left: 87%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-8"
+            style="top: 35%; left: 88%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-9"
+            style="top: 26%; left: 80%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-10"
+            style="top: 20%; left: 82%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-11"
+            style="top: 21%; left: 78%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-12"
+            style="top: 15%; left: 76%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-13"
+            style="top: 13%; left: 73%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-14"
+            style="top: 25%; left: 75%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-15"
+            style="top: 25.5%; left: 70%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-16"
+            style="top: 21%; left: 66.5%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-17"
+            style="top: 25.5%; left: 65%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-18"
+            style="top: 29%; left: 63%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-19"
+            style="top: 41%; left: 55%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-20"
+            style="top: 45%; left: 46%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-21"
+            style="top: 41%; left: 48%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-22"
+            style="top: 37%; left: 45%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-23"
+            style="top: 26.5%; left: 51%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-24"
+            style="top: 24.5%; left: 49%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-25"
+            style="top: 27%; left: 43%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-26"
+            style="top: 14%; left: 26%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-27"
+            style="top: 20.5%; left: 24%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-28"
+            style="top: 24%; left: 26%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-29"
+            style="top: 27%; left: 22.5%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-30"
+            style="top: 17.5%; left: 19%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-31"
+            style="top: 10%; left: 12%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-32"
+            style="top: 21%; left: 11.5%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-33"
+            style="top: 31%; left: 14%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-34"
+            style="top: 34%; left: 11.5%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="smoke-35"
+            style="top: 51%; left: 18.5%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/smoke.png" alt="" />
+          </a>
+          <a
+            id="molotov-1"
+            style="top: 47%; left: 51%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/fire.png" alt="" />
+          </a>
+          <a
+            id="molotov-2"
+            class="popup-link"
+            style="top: 40%; left: 62%"
+            href="#popup"
+          >
+            <img src="/res/pictures/fire.png" alt="" />
+          </a>
+          <a
+            id="molotov-3"
+            style="top: 34%; left: 62.5%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/fire.png" alt="" />
+          </a>
+          <a
+            id="molotov-4"
+            style="top: 24.5%; left: 63%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/fire.png" alt="" />
+          </a>
+          <a
+            id="molotov-5"
+            style="top: 20%; left: 68%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/fire.png" alt="" />
+          </a>
+          <a
+            id="molotov-6"
+            style="top: 20%; left: 76%"
+            h
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/fire.png" alt="" />
+          </a>
+          <a
+            id="molotov-7"
+            style="top: 20%; left: 80%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/fire.png" alt="" />
+          </a>
+          <a
+            id="molotov-8"
+            style="top: 6%; left: 78%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/fire.png" alt="" />
+          </a>
+          <a
+            id="molotov-9"
+            style="top: 29%; left: 92%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/fire.png" alt="" />
+          </a>
+          <a
+            id="molotov-10"
+            style="top: 35.5%; left: 45.5%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/fire.png" alt="" />
+          </a>
+          <a
+            id="molotov-11"
+            style="top: 34%; left: 11.5%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/fire.png" alt="" />
+          </a>
+          <a
+            id="molotov-12"
+            style="top: 20%; left: 13%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/fire.png" alt="" />
+          </a>
+          <a
+            id="molotov-13"
+            style="top: 17%; left: 18%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/fire.png" alt="" />
+          </a>
+          <a
+            id="molotov-14"
+            style="top: 8%; left: 10.5%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/fire.png" alt="" />
+          </a>
+          <a
+            id="molotov-15"
+            style="top: 12%; left: 22%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/fire.png" alt="" />
+          </a>
+          <a
+            id="molotov-16"
+            style="top: 13.5%; left: 27%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/fire.png" alt="" />
+          </a>
+          <a
+            id="flash-1"
+            style="top: 31%; left: 8%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/flash.png" alt="" />
+          </a>
+          <a
+            id="flash-2"
+            style="top: 21%; left: 8%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/flash.png" alt="" />
+          </a>
+          <a
+            id="flash-3"
+            style="top: 31%; left: 14%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/flash.png" alt="" />
+          </a>
+          <a
+            id="flash-4"
+            style="top: 25%; left: 20%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/flash.png" alt="" />
+          </a>
+          <a
+            id="flash-5"
+            style="top: 36.5%; left: 45%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/flash.png" alt="" />
+          </a>
+          <a
+            id="flash-6"
+            style="top: 39%; left: 45%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/flash.png" alt="" />
+          </a>
+          <a
+            id="flash-7"
+            style="top: 39%; left: 60.5%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/flash.png" alt="" />
+          </a>
+          <a
+            id="flash-8"
+            style="top: 55%; left: 69%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/flash.png" alt="" />
+          </a>
+          <a
+            id="flash-9"
+            style="top: 57%; left: 76%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/flash.png" alt="" />
+          </a>
+          <a
+            id="flash-10"
+            style="top: 54%; left: 83.5%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/flash.png" alt="" />
+          </a>
+          <a
+            id="flash-11"
+            style="top: 46%; left: 82%"
+            href="#popup"
+            class="popup-link"
+          >
+            <img src="/res/pictures/flash.png" alt="" />
+          </a>
+        </a>
+      </a>
+      <a
+        id="flash-12"
+        style="top: 27.5%; left: 77%"
+        href="#popup"
+        class="popup-link"
+      >
+        <img src="/res/pictures/flash.png" alt="" />
+      </a>
+        <a
+          id="flash-13"
+          style="top: 27%; left: 83%"
+          href="#popup"
+          class="popup-link"
+        >
+          <img src="/res/pictures/flash.png" alt="" />
+        </a>
+        <a
+        id="flash-14"
+        style="top: 20%; left: 83.5%"
+        href="#popup"
+        class="popup-link"
+      >
+        <img src="/res/pictures/flash.png" alt="" />
+      </a>
+      <a
+      id="flash-15"
+      style="top: 18%; left: 59%"
+      href="#popup"
+      class="popup-link"
+    >
+      <img src="/res/pictures/flash.png" alt="" />
+    </a>
+        </div>
+      </div>
+      <div id="popup" class="popup">
+        <div class="popup_body">
+          <div class="popup_content">
+            <a href="" class="popup_close close-popup">X</a>
+            <div class="card-block">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/modal_window.js"></script>
+    <script src="../scripts/dust2_script.js"></script>
+  </body>
+</html>
